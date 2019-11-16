@@ -4,11 +4,11 @@ date: "2019-11-16"
 description: "Instant-pot cooked beans, brazilian-inspired. Vegan by design."
 ---
 
-This recipe is my interpretation of brazilian beans with some added smoke via peppers. I also add a bit more flavor than tradicional brazilian beans via some extra veggies. I use an Instant Pot, so the instructions are for it, but refer to your pressure cooker manual for dried beans. Anyway, let's go to the recipe!
+This recipe is my interpretation of brazilian beans with some added smoke via peppers. I also add a bit more flavor than traditional brazilian beans via some extra veggies. I use an Instant Pot, so the instructions are for it, but refer to your pressure cooker manual for dried beans. Anyway, let's go to the recipe!
 
 **Note 1:** my recipes usually have very little measurements (I rarely measure) and these are approximations. Tune it to your tasting. Pro-tip: do you measure often? Measure the ingredient and put it in your hands. That will give you a visual indication of what that amount of the ingredient looks like for the measurement you chose.
 
-**Note 2:** this recipe is vegan by design. Brazilian beans can be very porky but I actually prefer it this way. If you use good beans (I LOVE rancho gordo beans), they will shine through without distracting flavors.
+**Note 2:** this recipe is vegan by design. Brazilian beans can be very porky but I actually prefer it this way. If you use good beans (I LOVE Rancho Gordo beans), they will shine through without distracting flavors.
 
 **Note 3:** Take your time on this one and you will be rewarded.
 
