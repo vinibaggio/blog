@@ -30,7 +30,7 @@ This recipe is my interpretation of brazilian beans with some added smoke via pe
 
 ## Preparation
 
-Turn on the IP on sautée mode, put the onions, stirring occasionally. When it seems it's getting too hot, keep adding a bit of water and sautée for 5 to 10 minutes, so that the onions are very tender and caramelized. While the onion is cooking, prepare the spices (cumin, bay leaves, sant and the peppers). If using whole peppers, clean them, tear them in pieces and keep the seeds or add them, I don't care. Although your guests might, depending on how spicy they like it. Add garlic, sautée until fragrant (30s? 10 minutes? what is time?). Add the spice mix and mix quickly, just so they bloom.
+Turn on the IP on sautée mode, put the onions, stirring occasionally. When it seems it's getting too hot, keep adding a bit of water and sautée for 5 to 10 minutes, so that the onions are very tender and caramelized. While the onion is cooking, prepare the spices (cumin, bay leaves, salt and the peppers). If using whole peppers, clean them, tear them in pieces and keep the seeds or add them, I don't care. Although your guests might, depending on how spicy they like it. Add garlic, sautée until fragrant (30s? 10 minutes? what is time?). Add the spice mix and mix quickly, just so they bloom.
 
 Add the beans (I often cook 1 or 2 cups of beans), kelp and enough water to cover it as if there's a thumb-size depth. We can fix it if it's too watery, don't worry too much about it. It sucks to have too little water though, so err on the watery side. Add the trimmings or whole veggies if you're splurging. 
 
