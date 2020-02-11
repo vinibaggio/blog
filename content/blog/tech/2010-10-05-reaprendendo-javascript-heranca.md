@@ -7,11 +7,11 @@ keywords: javascript, herança, closure, oop, module, prototype
 title: Reaprendendo JavaScript - Herança
 ---
 
-# Reaprendendo JavaScript &mdash; Herança 
+# Reaprendendo JavaScript &mdash; Herança
 
 Na [segunda parte](/JavaScript/reaprendendo-javascript-parte-2), começamos
 a ver como funciona orientação a objetos em JavaScript. Também vimos a estrutura
-chamada <code>prototype</code> e o que podemos fazer com ela.
+chamada `prototype` e o que podemos fazer com ela.
 
 Na parte três, veremos mais sobre essa importante propriedade de
 objetos em JavaScript para entender como, por exemplo, podemos adicionar
@@ -25,9 +25,9 @@ Podemos alterar qualquer objeto presente no JavaScript. Funções e
 propriedades não são exceção, como já vimos anteriormente. Nada
 impede então de adicionarmos comportamento a classes <em>built-in</em>.
 Basta lembrar que, quando um método não é encontrado no objeto em si,
-o lookup é feito no <code>prototype</code>:
+o lookup é feito no `prototype`:
 
-{{< highlight javascript >}}
+```js
 Array                                      // [Function]
 Array.prototype.sayHello = function() {
     console.log('Hello!');
@@ -35,14 +35,14 @@ Array.prototype.sayHello = function() {
 
 [1,2,3].sayHello();                        // Hello!
 
-{{< / highlight >}}
+```
 
 Esse exemplo é bem simples (para não dizer idiota), mas dá para
 entender o que podemos fazer. Podemos, por exemplo, implementar
-um método <code>shuffle</code> (sem entrar no mérito de random
+um método `shuffle` (sem entrar no mérito de random
 enviesado):
 
-{{< highlight javascript >}}
+```js
 Array.prototype.shuffle = function() {
     var newPosition, currentItem;
 
@@ -57,14 +57,14 @@ Array.prototype.shuffle = function() {
 };
 
 console.log([1,2,3,4,5,6,7,8,9].shuffle());
-{{< / highlight >}}
+```
 
 ## Herança
 
-Como visto na parte 2, a engine JavaScript usa o <code>prototype</code> para
+Como visto na parte 2, a engine JavaScript usa o `prototype` para
 procurar métodos e propriedades quando eles não se encontram no próprio objeto.
-Vimos também logo acima que o <code>prototype</code> pode ser facilmente
-alterado. 
+Vimos também logo acima que o `prototype` pode ser facilmente
+alterado.
 
 
 ### Alterando prototype
@@ -72,7 +72,7 @@ alterado.
 Então vamos aproveitar essas características para implementar uma
 versão simples de herança:
 
-{{< highlight javascript >}}
+```js
 
 function Car() {
     this.wheels = 4;
@@ -85,37 +85,37 @@ function SportsCar() {
 
 SportsCar.prototype = new Car();
 
-{{< / highlight >}}
+```
 
 Lembre-se: usamos o new em Car para obter um objeto com as propriedades.
 Com isso declarado, podemos fazer:
 
 
-{{< highlight javascript >}}
+```js
 
 ferrari = new SportsCar();         // { speed: '300km/h' }
 ferrari.wheels;                    // 4
 ferrari.type;                      // 'motor'
 
-{{< / highlight >}}
+```
 
 Tudo parece certo, né? Errado. No node.js, tudo correto, mas no browser, temos:
 
-{{< highlight javascript >}}
+```js
 
 ferrari instanceof Car;          // true
 ferrari instanceof SportsCar;    // false
 
-{{< / highlight >}}
+```
 
-O <code>instanceof</code> usa o <code>constructor</code> para determinar
+O `instanceof` usa o `constructor` para determinar
 a classe. É sabido, em JavaScript, por essas e outras razões, que
-devemos, sempre que sobreescrevermos o <code>prototype</code>, devemos
-atualizar o <code>constructor</code>. Note que apenas
-alterar não é problema, como fizemos com o <code>Array</code>.
+devemos, sempre que sobreescrevermos o `prototype`, devemos
+atualizar o `constructor`. Note que apenas
+alterar não é problema, como fizemos com o `Array`.
 Dessa forma, temos o seguinte:
 
-{{< highlight javascript >}}
+```js
 
 function Car() {
     this.wheels = 4;
@@ -133,7 +133,7 @@ ferrari = new SportsCar();
 ferrari instanceof Car;             // true
 ferrari instanceof SportsCar;       // true
 
-{{< / highlight >}}
+```
 
 ## Reflexão
 
@@ -150,7 +150,7 @@ criadores do jQuery, também escreveu sobre isso e você pode ver por
 aí trocentos outros.
 
 Mas antes de continuar falando sobre hierarquia em JavaScript,
-vou tentar fazer um paralelo com Ruby. 
+vou tentar fazer um paralelo com Ruby.
 
 Em Ruby, usamos mais comumente um tipo de herança especial conhecido como
 [Mixins](http://en.wikipedia.org/wiki/Mixins) e não apenas Herança

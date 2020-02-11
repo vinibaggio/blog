@@ -55,8 +55,8 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong>, who works in tech in NY but would rather
-        be in the kitchen all the time.
+        Written by <strong>{author}</strong>, who works in tech in NY and loves
+        being in the kitchen in the remaining time.
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
           Twitter

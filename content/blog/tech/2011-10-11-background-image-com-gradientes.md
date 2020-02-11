@@ -1,12 +1,11 @@
 ---
+title: Misturando imagens de background com gradientes
 categories:
 - CSS
 date: "2011-10-11T00:00:00Z"
 description: Misturando imagens de background com gradientes
 keywords: css, css3, background, gradiente, gradient
 ---
-
-# Misturando imagens de background com gradientes
 
 Estou trabalhando atualmente no site [RockInSampa](http://www.rockinsampa.com),
 um site que agrega os shows de rock da cidade de São Paulo. O layout final
@@ -26,12 +25,12 @@ Dessa forma, eu recortei a textura, sem o gradiente:
 
 ![Textura](/images/posts/rock-in-sampa/textura.png)
 
-{{< highlight css >}}
+```css
 body {
     background: #1e1e1e;
     background-image: url('textura.png');
 }
-{{< / highlight >}}
+```
 
 O resultado foi:
 
@@ -42,7 +41,7 @@ alcançar o background que queria:
 
 ![Gradiente aplicado](/images/posts/rock-in-sampa/gradiente-aplicado.png)
 
-{{< highlight css >}}
+```css
 html { min-height: 100%; }
 
 body {
@@ -50,7 +49,7 @@ body {
     background-image: -webkit-linear-gradient(top, rgba(100, 100, 100, 0.2),
         rgba(0, 0, 0, 0.5)), url('textura.png'); /* Chrome 10+, Saf5.1+ */
 }
-{{< / highlight >}}
+```
 
 Há alguns detalhes importantes sobre o CSS acima:
 
@@ -66,4 +65,3 @@ Há alguns detalhes importantes sobre o CSS acima:
 +  Este CSS está funcionando perfeitamente em Opera, Firefox e Chrome. Não funciona no IE 7, IE 8 e IE 9, mas deve ser possível fazer algum hack. Para o RockInSampa, eu fiz um fallback com o background somente com a textura.
 
 Para mais informações sobre gradientes CSS, veja [neste post no CSS tricks](http://css-tricks.com/5700-css3-gradients/).
-

@@ -1,4 +1,5 @@
 ---
+title: "Programação funcional: conceitos"
 categories:
 - Prog Funcional
 date: "2012-12-02T00:00:00Z"
@@ -7,7 +8,6 @@ description: Artigo sobre a definição de programação funcional e a comparaç
 keywords: programação funcional, scala, erlang, clojure
 ---
 
-# Programação funcional: conceitos
 
 Observação: Esta série sobre programação funcional é basicamente uma
 interpretação _minha_ do que estou aprendendo enquanto estudo. Note que o tempo

@@ -1,4 +1,5 @@
 ---
+title: Revisão do livro Web Operations - Keeping the data on time
 categories:
 - Livros
 date: "2011-10-09T00:00:00Z"
@@ -6,7 +7,6 @@ description: Revisão do livro "Web Operations - keeping the data on time"
 keywords: web operations, livros, reviews, revisão, leitura recomendada, devops, operações
 ---
 
-# Revisão do livro Web Operations - Keeping the data on time
 
 ![Web Operations](/images/posts/web-operations/web-operations.png)
 

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `vinibaggio.net`,
     author: `Vinicius Baggio Fuentes`,
-    description: `Some random shit on the internet.`,
+    description: `Some random words on the internet.`,
     siteUrl: `https://vinibaggio.net/`,
     social: {
       twitter: `vinibaggio`,
@@ -25,9 +25,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -43,6 +44,13 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: null,
+              rel: "nofollow noopener noreferrer external",
+            },
+          },
         ],
       },
     },
@@ -51,15 +59,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-6968963-1`,
       },
     },
-    `gatsby-plugin-feed`,
+    `gatsby-plugin-feed-mdx`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `vinibaggio.net`,
+        short_name: `vinibaggio.net`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

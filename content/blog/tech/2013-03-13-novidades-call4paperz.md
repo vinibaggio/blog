@@ -1,12 +1,11 @@
 ---
+title: Novidades call4paperz.com
 categories:
 - Geral
 date: "2013-03-13T00:00:00Z"
 description: Novidades no call4paperz.com
 keywords: call4paperz
 ---
-
-# Novidades call4paperz.com
 
 Recentemente o call4paperz.com passou por um período meio ruim. Depois que eu
 tornei o projeto opensource, mal me dediquei ao projeto. Algumas pessoas
@@ -50,7 +49,7 @@ possuem vários bugs e não é amplamente testado.
 
 Em seguida, a correção do sistema de votação, que é bastante ingênuo: apenas
 conta pontos positivos e negativos. Abri uma issue no projeto e tive feedback
-excelente de alguns amigos (obrigado!). Vale a pena dar uma olhada na 
+excelente de alguns amigos (obrigado!). Vale a pena dar uma olhada na
 [Issue #18](https://github.com/vinibaggio/call4paperz/issues/18) para ver
 a discussão e os algoritmos mencionados.
 

@@ -1,4 +1,5 @@
 ---
+title: Reaprendendo JavaScript [parte 2]
 categories:
 - JavaScript
 date: "2010-09-19T00:00:00Z"
@@ -7,14 +8,13 @@ description: Alguns conceitos avançados de JavaScript, como Closures e Orienta�
 keywords: javascript, closure, oop, module, prototype
 ---
 
-# Reaprendendo JavaScript [parte 2]
 
 Em [Reaprendendo JavaScript parte 1](/JavaScript/reaprendendo-javascript-parte-1), eu listei boas fontes para se aprender JavaScript e alguns trechos interessantes/bizarros de JavaScript.
 
 Nesse artigo, meu objetivo é falar mais sobre como trabalhar na
 linguagem que é baseada em protótipos, um conceito não muito familiar por aí. O
 conceito é simples: basicamente você tem objetos que servirão de protótipos para
-outros, ou seja, os novos objetos serão baseados nele. 
+outros, ou seja, os novos objetos serão baseados nele.
 
 Vamos explorar esse conceito mais para frente, mas primeiro vamos a alguns detalhes relativo à primeira parte dessa série.
 
@@ -35,7 +35,7 @@ globais.
 
 Uma maneira simples é usar Closures para organizar seus arquivos. Exemplo:
 
-{{< highlight javascript >}}
+```js
 var MyModule = function() {
     var myLocalVar = 'Hello!';
 
@@ -54,13 +54,13 @@ var MyModule = function() {
 
 MyModule.init(); // Alert: 'Hello!'
 
-{{< / highlight >}}
+```
 
-Nesse caso, <code>myLocalVar</code> e <code>myFunction</code> não estarão acessíveis externamente,
+Nesse caso, `myLocalVar` e `myFunction` não estarão acessíveis externamente,
 protegendo o escopo. Se você quiser executar o código imediatamente, você pode
 usar funções anônimas:
 
-{{< highlight javascript >}}
+```js
 (function() {
     var myLocalVar = 'Hello!';
 
@@ -71,15 +71,15 @@ usar funções anônimas:
 
     myFunction();
 })();
-{{< / highlight >}}
+```
 
 ## Utilidade para arguments.callee
 
-No post passado eu escrevi sobre o <code>arguments</code> possui o propriedade
-<code>callee</code>, que retorna o próprio método. Uma coisa interessante sobre
-funções é que podemos verificar o <code>caller</code>:
+No post passado eu escrevi sobre o `arguments` possui o propriedade
+`callee`, que retorna o próprio método. Uma coisa interessante sobre
+funções é que podemos verificar o `caller`:
 
-{{< highlight javascript >}}
+```js
 function F() {
   console.log(arguments.callee.caller);
 }
@@ -93,7 +93,7 @@ G();    // function G() {
         // }
 
 
-{{< / highlight >}}
+```
 
 
 ## Object-Oriented JavaScript
@@ -101,11 +101,11 @@ G();    // function G() {
 Agora sim, chegamos em um assunto interessante. Como disse no início do artigo,
 JavaScript é uma linguagem baseada em protótipo. Para criar objetos de uma
 "classe", usaremos uma função para gerar uma nova instância. Para isso, basta
-usar a palavra reservada <code>new</code> antes de uma função. Dessa forma,
-dentro dessa função, <code>this</code> irá representar essa nova instância.
+usar a palavra reservada `new` antes de uma função. Dessa forma,
+dentro dessa função, `this` irá representar essa nova instância.
 Nada melhor que um exemplo:
 
-{{< highlight javascript >}}
+```js
 
 function Car(manufacturer, model) {
     this.manufacturer = manufacturer;
@@ -119,14 +119,14 @@ var ferrari = new Car('Ferrari', 'Enzo');
 porsche; // { manufacturer: 'Porsche', model: 'Carrera' }
 ferrari; // { manufacturer: 'Ferrari', model: 'Enzo' }
 
-{{< / highlight >}}
+```
 
 Note que eu não retornei nada nessa função! Por padrão, o retorno é
-<code>this</code>.
+`this`.
 
-Note que devemos usar o <code>new</code>, caso contrário, <code>this</code> será o objeto global. Exemplo deste código no browser, sem o <code>new</code>:
+Note que devemos usar o `new`, caso contrário, `this` será o objeto global. Exemplo deste código no browser, sem o `new`:
 
-{{< highlight javascript >}}
+```js
 
 function Car(manufacturer, model) {
     this.manufacturer = manufacturer;
@@ -138,13 +138,13 @@ var porsche = Car('Porsche', 'Carrera');
 porsche;             // undefined. Hein?
 window.manufacturer; // "Porsche". O QUE??
 
-{{< / highlight >}}
+```
 
-Outros aspectos que temos que tomar cuidado com o <code>new</code>. Tudo que for
+Outros aspectos que temos que tomar cuidado com o `new`. Tudo que for
 retornado que não seja um _object literal_ será ignorado, mas caso contrário,
 ele será o objeto retornado!
 
-{{< highlight javascript >}}
+```js
 
 function Car(manufacturer, model) {
     this.manufacturer = manufacturer;
@@ -159,7 +159,7 @@ porsche;              // { manufacturer: 'Porsche', model: 'Carrera' }
 
 function Hello() {
     this.english = 'Hello!';
-    return { 
+    return {
         japanese: 'Konichiwa!'
     }
 }
@@ -168,17 +168,17 @@ var salute = new Hello();
 salute.english;             // undefined
 salute.japanese;            // 'Konichiwa!'
 
-{{< / highlight >}}
+```
 
 Pois é. Toma cuidado!
 
 ## Prototype
 
-O <code>prototype</code> é um nível hierárquivo acima dos objetos em si. Métodos e
+O `prototype` é um nível hierárquivo acima dos objetos em si. Métodos e
 propriedades são compartilhados entre todas as instâncias, e quando um método ou
 propriedade não é encontrado, procura-se um nível hierárquico acima:
 
-{{< highlight javascript >}}
+```js
 
 function Car(manufacturer, model) {
     this.manufacturer = manufacturer;
@@ -208,9 +208,9 @@ ferrari.hasOwnProperty('price'); // false
 porsche.hasOwnProperty('price'); // true
 
 
-{{< / highlight >}}
+```
 
-Existe muito mais a ser explorado com <code>prototype</code>, como sobrescrita,
+Existe muito mais a ser explorado com `prototype`, como sobrescrita,
 acesso ao construtor, etc. mas isso vai ficar para a parte 3.
 
 UPDATE 1: Corrigindo texto.

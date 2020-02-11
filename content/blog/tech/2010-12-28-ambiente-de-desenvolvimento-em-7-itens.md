@@ -1,12 +1,11 @@
 ---
+title: Meu ambiente de desenvolvimento em 7 itens
 categories:
 - Geral
 date: "2010-12-28T00:00:00Z"
 description: Descrição do meu ambiente de desenvolvimento em 7 itens
 keywords: ambiente de desenvolvimento, vim, mac, osx
 ---
-
-# Meu ambiente de desenvolvimento em 7 itens
 
 Hoje à tarde fui convidado pelo [@jtadeulopes](http://jlopes.zigotto.com.br/)
 para escrever meu ambiente de trabalho em 7 itens, então aqui vai:
@@ -20,7 +19,7 @@ teclado bluetooth, mas com a tela fechada (não sou organizado o suficiente
 para organizar a tela do MBP e o externo).
 
 De vez em quando ainda uso o meu bom e velho Macbook (White de Abril 2007) para fazer
-algumas coisinhas, como rodar testes demorados e rodar VM's 
+algumas coisinhas, como rodar testes demorados e rodar VM's
 (algumas cópias do Windows XP com IE, um Ubuntu e um Slackware).
 
 ## Editor
@@ -41,7 +40,7 @@ que estiver mais confortável com o processo de desenvolvimento.
 ## Terminal
 
 O meu terminal é o tradicional Bash (não tive muita paciência para testar
-o zsh) com um monte de coisas do bashrc que ainda não publiquei. 
+o zsh) com um monte de coisas do bashrc que ainda não publiquei.
 
 Uso a gem terminitor para gerenciar abas e janelas de acordo com cada projeto,
 mas o layout costuma ser assim:

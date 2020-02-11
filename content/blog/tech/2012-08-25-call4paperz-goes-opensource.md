@@ -1,12 +1,11 @@
 ---
+title: call4paperz.com goes opensource
 categories:
 - Geral
 date: "2012-08-25T00:00:00Z"
 description: call4paperz.com goes open source
 keywords: call4paperz, opensource, github
 ---
-
-# call4paperz.com goes opensource
 
 In 2010, me, Douglas Campos (qmx) and Anderson Leite worked on a RailsRumble
 project called call4paperz.com. Almost 2 years later, the project is still
