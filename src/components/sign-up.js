@@ -50,7 +50,7 @@ const SignUp = () => {
           </label>
         </p>
         <p>
-          <label>Email: <input type="email" name="email" /></label>
+          <label>Email: <input type="email" name="email" onChange={handleChange} /></label>
           <button type="submit" style={{marginLeft: '10px'}}>Send</button>
         </p>
       </form>
