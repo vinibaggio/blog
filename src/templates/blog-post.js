@@ -8,9 +8,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import SignUp from "../components/sign-up"
+import Term, { TableOfTerms } from "../components/term"
 
 const shortcodes = {
   SignUp,
+  TableOfTerms,
+  Term,
 }
 
 class BlogPostTemplate extends React.Component {

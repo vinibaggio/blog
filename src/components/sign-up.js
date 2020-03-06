@@ -51,7 +51,7 @@ const SignUp = () => {
         </p>
         <p>
           <label>Email: <input type="email" name="email" onChange={handleChange} /></label>
-          <button type="submit" style={{marginLeft: '10px'}}>Send</button>
+          <button type="submit" style={{marginLeft: '10px'}}>Subscribe</button>
         </p>
       </form>
     </div>
